@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Adding a default font for better appearance */
+}
+
+.header, .star, p {
+    text-align: center;
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 20px;
+    width: 100%; /* Full width for mobile */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Ensure items stack */
+    align-items: center; /* Center content horizontally */
+    border: 1px solid black;
+    padding: 20px; /* Add some padding inside the container */
+    border-radius: 10px; /* Optional: round the corners */
+    background-color: #f9f9f9; /* Optional: a light background color */
+}
+
+.part1 img {
+    width: 100%; /* Make the image responsive */
+    max-width: 250px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: round the corners of the image */
+}
+
+.part2 h1 {
+    font-size: 18px; /* Adjust font size */
+    margin: 10px 0; /* Spacing */
+}
+
+.part2 h3 {
+    font-size: 14px; /* Adjust font size */
+    margin: 5px 0; /* Spacing */
+}
+
+.count {
+    text-align: center;
+    margin: 10px 0; /* Spacing */
+}
+
+.vote {
+    width: 100%; /* Full width for mobile */
+    max-width: 200px; /* Limit max width */
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Round the button corners */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top: 20px;
+}
+
+.vote:hover {
+    background-color: #444; /* Change color on hover for better UX */
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .part2 h1 {
+        font-size: 16px; /* Smaller font size on mobile */
+    }
+
+    .part2 h3 {
+        font-size: 12px; /* Smaller font size on mobile */
+    }
+
+    .vote {
+        width: 90%; /* Slightly smaller width for mobile */
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+}
